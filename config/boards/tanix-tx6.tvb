@@ -1,8 +1,12 @@
-# Allwinner H6 quad core 2/4GB SoC WiFi eMMC
-BOARD_NAME="Tanix TX6"
+# tanix-tx6
+BOARD_NAME="tanix-tx6"
 BOARDFAMILY="sun50iw6"
-BOARD_MAINTAINER=""
 BOOTCONFIG="tanix_tx6_defconfig"
-KERNEL_TARGET="legacy,current,edge"
-KERNEL_TEST_TARGET="current"
-CRUSTCONFIG="tanix_tx6_defconfig"
+KERNEL_TARGET="current,edge"
+HAS_VIDEO_OUTPUT="yes"
+BUILD_DESKTOP="no"
+ATFBRANCH="tag:v2.4"
+BOOTBRANCH_BOARD="tag:v2022.10"
+BOOTPATCHDIR="u-boot-sunxi-v2022.10"
+BOOT_FDT_FILE="allwinner/sun50i-h6-tanix-tx6.dtb"
+SRC_CMDLINE="console=ttyS0,115200 console=tty1"
